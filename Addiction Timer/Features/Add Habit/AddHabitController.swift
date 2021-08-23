@@ -8,13 +8,20 @@
 import Foundation
 
 class AddHabitController {
-    var habitTitle: String?
-    var habitInterval: HabitInterval?
+    private var habitTitle: String?
+    private var habitInterval: HabitInterval?
     
     func createHabit() -> Habit? {
-        guard let title = habitTitle,
-              let interval = habitInterval
+        Habit(name: habitTitle, interval: habitInterval)
+    }
+}
+
+extension Habit {
+    init?(name: String?, interval: HabitInterval?) {
+        guard let name = name,
+              let interval = interval
         else { return nil }
-        return Habit(name: title, intervals: [interval], habitStarted: Date())
+        
+        self.init(name: name, intervals: [interval], habitStarted: Date())
     }
 }
