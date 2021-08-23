@@ -15,6 +15,11 @@
 		AACAAC7426D2EA66000A6311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AACAAC7226D2EA66000A6311 /* LaunchScreen.storyboard */; };
 		AACAAC8126D2FF9E000A6311 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACAAC8026D2FF9E000A6311 /* AppController.swift */; };
 		AACAAC8426D300CC000A6311 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACAAC8326D300CC000A6311 /* Habit.swift */; };
+		AACAAC8826D30B6E000A6311 /* AddHabitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACAAC8726D30B6E000A6311 /* AddHabitController.swift */; };
+		AACAAC8C26D30C27000A6311 /* AddHabitComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACAAC8B26D30C27000A6311 /* AddHabitComponentViewController.swift */; };
+		AACAAC8E26D30F1B000A6311 /* AddHabitTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACAAC8D26D30F1B000A6311 /* AddHabitTitleViewController.swift */; };
+		AACAAC9026D31B74000A6311 /* AddHabitIntervalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACAAC8F26D31B74000A6311 /* AddHabitIntervalViewController.swift */; };
+		AACAAC9226D322F6000A6311 /* UIStackView+componentStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACAAC9126D322F6000A6311 /* UIStackView+componentStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		AACAAC7526D2EA66000A6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACAAC8026D2FF9E000A6311 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		AACAAC8326D300CC000A6311 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		AACAAC8726D30B6E000A6311 /* AddHabitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitController.swift; sourceTree = "<group>"; };
+		AACAAC8B26D30C27000A6311 /* AddHabitComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitComponentViewController.swift; sourceTree = "<group>"; };
+		AACAAC8D26D30F1B000A6311 /* AddHabitTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitTitleViewController.swift; sourceTree = "<group>"; };
+		AACAAC8F26D31B74000A6311 /* AddHabitIntervalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitIntervalViewController.swift; sourceTree = "<group>"; };
+		AACAAC9126D322F6000A6311 /* UIStackView+componentStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+componentStack.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,7 @@
 				AACAAC8226D300C0000A6311 /* Model */,
 				AACAAC7C26D2FDBB000A6311 /* View */,
 				AACAAC7B26D2EB08000A6311 /* Controller */,
+				AACAAC8526D30B27000A6311 /* Features */,
 			);
 			path = "Addiction Timer";
 			sourceTree = "<group>";
@@ -83,6 +94,7 @@
 				AACAAC7026D2EA66000A6311 /* Assets.xcassets */,
 				AACAAC7226D2EA66000A6311 /* LaunchScreen.storyboard */,
 				AACAAC6D26D2EA66000A6311 /* Main.storyboard */,
+				AACAAC9126D322F6000A6311 /* UIStackView+componentStack.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +131,25 @@
 				AACAAC8326D300CC000A6311 /* Habit.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AACAAC8526D30B27000A6311 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AACAAC8626D30B53000A6311 /* Add Habit */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AACAAC8626D30B53000A6311 /* Add Habit */ = {
+			isa = PBXGroup;
+			children = (
+				AACAAC8726D30B6E000A6311 /* AddHabitController.swift */,
+				AACAAC8B26D30C27000A6311 /* AddHabitComponentViewController.swift */,
+				AACAAC8D26D30F1B000A6311 /* AddHabitTitleViewController.swift */,
+				AACAAC8F26D31B74000A6311 /* AddHabitIntervalViewController.swift */,
+			);
+			path = "Add Habit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +224,13 @@
 			files = (
 				AACAAC6C26D2EA66000A6311 /* HomeViewController.swift in Sources */,
 				AACAAC8426D300CC000A6311 /* Habit.swift in Sources */,
+				AACAAC9226D322F6000A6311 /* UIStackView+componentStack.swift in Sources */,
+				AACAAC8E26D30F1B000A6311 /* AddHabitTitleViewController.swift in Sources */,
 				AACAAC6826D2EA66000A6311 /* AppDelegate.swift in Sources */,
 				AACAAC6A26D2EA66000A6311 /* SceneDelegate.swift in Sources */,
+				AACAAC8826D30B6E000A6311 /* AddHabitController.swift in Sources */,
+				AACAAC8C26D30C27000A6311 /* AddHabitComponentViewController.swift in Sources */,
+				AACAAC9026D31B74000A6311 /* AddHabitIntervalViewController.swift in Sources */,
 				AACAAC8126D2FF9E000A6311 /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
