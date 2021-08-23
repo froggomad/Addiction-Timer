@@ -10,15 +10,27 @@ import XCTest
 
 class AddHabitTests: XCTestCase {
     
-    var sut: AddHabitController {
-        let sut = AddHabitController()
-        return sut
+    var sut: (AddTitleViewController, AddHabitIntervalViewController, HabitInterval) {
+        let addTitleController = AddTitleViewController()
+        let intervalController = AddHabitIntervalViewController(controller: addTitleController.controller)
+        let interval = HabitInterval(minutes: 60, dateStarted: Date())
+        return (addTitleController, intervalController, interval)
     }
     
     func testDelegatesDontRetain() {
         let controller = AddTitleViewController()
         assertNoMemoryLeak(controller)
         assertNoMemoryLeak(controller.view)
+    }
+    
+    func testHabitIsCreated() {
+        let addTitleController = sut.0
+        let addHabitIntervalController = sut.1
+        
+        addTitleController.updateTitle("Test")
+        addHabitIntervalController.controller = addTitleController.controller
+        addHabitIntervalController.updateInterval(sut.2)
+        XCTAssertNotNil(addHabitIntervalController.controller.createHabit())
     }
     
 }
