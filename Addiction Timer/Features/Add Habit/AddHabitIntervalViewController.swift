@@ -8,7 +8,7 @@
 import UIKit
 
 protocol IntervalUpdateDelegate {
-    func updateInterval()
+    func updateInterval(_: HabitInterval)
 }
 
 class AddHabitIntervalView: UIView {
@@ -90,4 +90,10 @@ class AddHabitIntervalViewController: UIViewController {
 
 extension AddHabitIntervalViewController: UIPickerViewDelegate {
     
+}
+
+extension AddHabitIntervalViewController: IntervalUpdateDelegate {
+    func updateInterval(_ habitInterval: HabitInterval) {
+        controller.updateInterval(habitInterval)
+    }
 }
