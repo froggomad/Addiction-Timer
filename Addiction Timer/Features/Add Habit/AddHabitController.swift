@@ -14,6 +14,14 @@ class AddHabitController {
     func createHabit() -> Habit? {
         Habit(name: habitTitle, interval: habitInterval)
     }
+    
+    func updateTitle(_ title: String) {
+        self.habitTitle = title
+    }
+    
+    func updateInterval(_ habitInterval: HabitInterval) {
+        self.habitInterval = habitInterval
+    }
 }
 
 extension Habit {
