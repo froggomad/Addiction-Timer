@@ -20,7 +20,18 @@
 		AACAAC8E26D30F1B000A6311 /* AddHabitTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACAAC8D26D30F1B000A6311 /* AddHabitTitleViewController.swift */; };
 		AACAAC9026D31B74000A6311 /* AddHabitIntervalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACAAC8F26D31B74000A6311 /* AddHabitIntervalViewController.swift */; };
 		AACAAC9226D322F6000A6311 /* UIStackView+componentStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACAAC9126D322F6000A6311 /* UIStackView+componentStack.swift */; };
+		AACAAC9A26D352D6000A6311 /* AddHabitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACAAC9926D352D6000A6311 /* AddHabitTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AACAAC9C26D352D6000A6311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AACAAC5C26D2EA66000A6311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AACAAC6326D2EA66000A6311;
+			remoteInfo = "Addiction Timer";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AACAAC6426D2EA66000A6311 /* Addiction Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Addiction Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,10 +49,20 @@
 		AACAAC8D26D30F1B000A6311 /* AddHabitTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitTitleViewController.swift; sourceTree = "<group>"; };
 		AACAAC8F26D31B74000A6311 /* AddHabitIntervalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitIntervalViewController.swift; sourceTree = "<group>"; };
 		AACAAC9126D322F6000A6311 /* UIStackView+componentStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+componentStack.swift"; sourceTree = "<group>"; };
+		AACAAC9726D352D6000A6311 /* Addiction TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Addiction TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AACAAC9926D352D6000A6311 /* AddHabitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitTests.swift; sourceTree = "<group>"; };
+		AACAAC9B26D352D6000A6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AACAAC6126D2EA66000A6311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AACAAC9426D352D6000A6311 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				AACAAC6626D2EA66000A6311 /* Addiction Timer */,
+				AACAAC9826D352D6000A6311 /* Addiction TimerTests */,
 				AACAAC6526D2EA66000A6311 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				AACAAC6426D2EA66000A6311 /* Addiction Timer.app */,
+				AACAAC9726D352D6000A6311 /* Addiction TimerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +175,15 @@
 			path = "Add Habit";
 			sourceTree = "<group>";
 		};
+		AACAAC9826D352D6000A6311 /* Addiction TimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AACAAC9926D352D6000A6311 /* AddHabitTests.swift */,
+				AACAAC9B26D352D6000A6311 /* Info.plist */,
+			);
+			path = "Addiction TimerTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,6 +204,24 @@
 			productReference = AACAAC6426D2EA66000A6311 /* Addiction Timer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AACAAC9626D352D6000A6311 /* Addiction TimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AACAAC9E26D352D6000A6311 /* Build configuration list for PBXNativeTarget "Addiction TimerTests" */;
+			buildPhases = (
+				AACAAC9326D352D6000A6311 /* Sources */,
+				AACAAC9426D352D6000A6311 /* Frameworks */,
+				AACAAC9526D352D6000A6311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AACAAC9D26D352D6000A6311 /* PBXTargetDependency */,
+			);
+			name = "Addiction TimerTests";
+			productName = "Addiction TimerTests";
+			productReference = AACAAC9726D352D6000A6311 /* Addiction TimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,6 +233,10 @@
 				TargetAttributes = {
 					AACAAC6326D2EA66000A6311 = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					AACAAC9626D352D6000A6311 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = AACAAC6326D2EA66000A6311;
 					};
 				};
 			};
@@ -200,6 +254,7 @@
 			projectRoot = "";
 			targets = (
 				AACAAC6326D2EA66000A6311 /* Addiction Timer */,
+				AACAAC9626D352D6000A6311 /* Addiction TimerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +267,13 @@
 				AACAAC7426D2EA66000A6311 /* LaunchScreen.storyboard in Resources */,
 				AACAAC7126D2EA66000A6311 /* Assets.xcassets in Resources */,
 				AACAAC6F26D2EA66000A6311 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AACAAC9526D352D6000A6311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +297,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AACAAC9326D352D6000A6311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACAAC9A26D352D6000A6311 /* AddHabitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AACAAC9D26D352D6000A6311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AACAAC6326D2EA66000A6311 /* Addiction Timer */;
+			targetProxy = AACAAC9C26D352D6000A6311 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AACAAC6D26D2EA66000A6311 /* Main.storyboard */ = {
@@ -413,6 +491,46 @@
 			};
 			name = Release;
 		};
+		AACAAC9F26D352D6000A6311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34P4RF23ET;
+				INFOPLIST_FILE = "Addiction TimerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kennydubroff.Addiction-TimerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Addiction Timer.app/Addiction Timer";
+			};
+			name = Debug;
+		};
+		AACAACA026D352D6000A6311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34P4RF23ET;
+				INFOPLIST_FILE = "Addiction TimerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kennydubroff.Addiction-TimerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Addiction Timer.app/Addiction Timer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -430,6 +548,15 @@
 			buildConfigurations = (
 				AACAAC7926D2EA66000A6311 /* Debug */,
 				AACAAC7A26D2EA66000A6311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AACAAC9E26D352D6000A6311 /* Build configuration list for PBXNativeTarget "Addiction TimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AACAAC9F26D352D6000A6311 /* Debug */,
+				AACAACA026D352D6000A6311 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
