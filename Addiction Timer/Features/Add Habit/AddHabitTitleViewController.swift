@@ -55,18 +55,22 @@ class AddStringView: UIView {
 class AddTitleViewController: UIViewController {
     
     lazy var titleView = AddStringView(placeholder: "Habit name (ex: \"Smoking Cigarettes\")")
+    var controller = AddHabitController()
     
     override func loadView() {
         super.loadView()
         view = titleView
     }
     
-    weak var titleUpdateDelegate: TitleUpdateDelegate?
-    
-    func updateDelegate() {
-        guard let title = titleView.text else { return }
-        titleUpdateDelegate?.updateTitle(title)
+    func presentIntervalController() {
+        let viewController = AddHabitIntervalViewController(controller: controller)
+        present(viewController, animated: true)
     }
     
 }
 
+extension AddTitleViewController: TitleUpdateDelegate {
+    func updateTitle(_ title: String) {
+        controller.updateTitle(title)
+    }
+}

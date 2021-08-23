@@ -70,7 +70,17 @@ extension AddHabitIntervalView: UIPickerViewDataSource {
 }
 
 class AddHabitIntervalViewController: UIViewController {
+    var controller: AddHabitController
     lazy var pickerView = AddHabitIntervalView(delegate: self)
+    
+    init(controller: AddHabitController) {
+        self.controller = controller
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("programmatic view")
+    }
     
     override func loadView() {
         super.loadView()
